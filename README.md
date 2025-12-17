@@ -14,7 +14,7 @@ Bulk RNAseq reads are analyzed in the following steps:
 Pipeline runs using snakemake. First, install snakemake. I use a standalone snakemake environment installed using mamba in the following way:
 ```
 module load mamba #on MSI
-mamba create -c conda-forge -c bioconda -n snakemake snakemake
+mamba create -c bioconda -n snakemake snakemake
 ```
 
 To run the pipeline on MSI, first run the command `source activate snakemake`. This will activate the snakemake software. All other software dependencies are loaded within the snakemake pipeline as standalone environments. See the yaml files under `workflow/envs`.
